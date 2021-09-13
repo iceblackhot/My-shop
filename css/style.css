@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+a {
+color: #fff;
+text-decoration: none;
+justify-content: flex-end;
+align-items: center;
+padding: 10px 15px;
+font-size: 20px;
+margin-left: 5px;
+display: flex;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+.header {
+    justify-content: space-between;
+    padding: 0px;
+    color: white;
+    }
+
+.header__logo {
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo a:hover {
+	animation: bounce 1s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.graficlogo{
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.menu {
+    list-style: none;
+    margin: 50px auto;
+    padding: 0;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    display: flex;
+}
+
+.menu__item {
+    flex-basis: 20%;
+}
+
+.menu__link {
+    font-size: 0px;
+    line-height: 26px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 0;
+    background-color: black;
+    position: relative;
+}
+
+.menu__link::before {
+    content: attr(data-name);
+    position: absolute;
+    font-size: 16px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2b2410;
+    transform: rotateX(90deg) translateY(46px);
+    transform-origin: 50% 100%;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+.menu__link:hover::before {
+    transform: rotateX(0deg) translateY(0);
+}
+
+.menu__link::after {
+    content: attr(data-name);
+    position: absolute;
+    font-size: 16px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #000;
+    transform: rotateX(0deg) translateY(0);
+    transform-origin: 50% 0;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+.menu__link:hover::after {
+    transform: rotateX(90deg) translateY(-46px);
+}
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iceshop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/carousel.css">
+   </head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+        <a href="index.html"><img class="graficlogo" src="img/logo.jpg" alt="Logo"></a>
+        <a href="#">+38(093)932 76 61</a>
+        <a href="#">iceblackhot2@gmail.com</a>
+        <a href="#">ОПЛАТА И ДОСТАВКА</a>
+        <a href="#">Регистрация/Вход</a>
+    </div>
+</header>
+      <div class="container">
+        <ul class="menu">
+            <li class="menu__item">
+                <a data-name="Главная" class="menu__link" href="main.html">Главная</a>
+            </li>
+            <li class="menu__item">
+                <a data-name="Чернила" class="menu__link" href="inks.html">Текстильные чернила</a>
+            </li>
+            <li class="menu__item">
+                <a data-name="Праймеры" class="menu__link" href="Pretreatments.html">Праймеры</a>
+            </li>
+            <li class="menu__item">
+                <a data-name="Жидкости" class="menu__link" href="Service fluids.html">Сервисные жидкости</a>
+            </li>
+            <li class="menu__item">
+                <a data-name="Расходники" class="menu__link" href="expendable materials.html">Расходные материалы</a>
+            </li>
+            <li class="menu__item">
+                <a data-name="Запчасти" class="menu__link" href="repair parts.html">Запчасти</a>
+            </li>
+        </ul>
+      </div>
+      <div class="slider">
+        <input type="radio" name="slide_switch" id="id1"/>
+        <label for="id1">
+            <img src="img/Dupont.jpg" width="100"/>
+        </label>
+        <img src="img/Dupont.jpg"/>
+        
+        <!--Lets show the second image by default on page load-->
+        <input type="radio" name="slide_switch" id="id2" checked="checked"/>
+        <label for="id2">
+            <img src="img/Kodak.jpg" width="100"/>
+        </label>
+        <img src="img/Kodak.jpg"/>
+        
+        <input type="radio" name="slide_switch" id="id3"/>
+        <label for="id3">
+            <img src="img/Firebird.jpg" width="100"/>
+        </label>
+        <img src="img/Firebird.jpg"/>
+        
+        <input type="radio" name="slide_switch" id="id4"/>
+        <label for="id4">
+            <img src="img/imageArmorBlack.jpg" width="100"/>
+        </label>
+        <img src="img/imageArmorBlack.jpg"/>
+        
+        <input type="radio" name="slide_switch" id="id5"/>
+        <label for="id5">
+            <img src="img/imageArmorLight.jpg" width="100"/>
+        </label>
+        <img src="img/imageArmorLight.jpg"/>
+    </div>
+    <script src="js/carousel.js"></script>
+ </body>
+</html>
