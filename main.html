@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,38 +42,23 @@
             </li>
         </ul>
       </div>
-      <div class="slider">
-        <input type="radio" name="slide_switch" id="id1"/>
-        <label for="id1">
-            <img src="img/Dupont.jpg" width="100"/>
-        </label>
-        <img src="img/Dupont.jpg"/>
-        
-        <!--Lets show the second image by default on page load-->
-        <input type="radio" name="slide_switch" id="id2" checked="checked"/>
-        <label for="id2">
-            <img src="img/Kodak.jpg" width="100"/>
-        </label>
-        <img src="img/Kodak.jpg"/>
-        
-        <input type="radio" name="slide_switch" id="id3"/>
-        <label for="id3">
-            <img src="img/Firebird.jpg" width="100"/>
-        </label>
-        <img src="img/Firebird.jpg"/>
-        
-        <input type="radio" name="slide_switch" id="id4"/>
-        <label for="id4">
-            <img src="img/imageArmorBlack.jpg" width="100"/>
-        </label>
-        <img src="img/imageArmorBlack.jpg"/>
-        
-        <input type="radio" name="slide_switch" id="id5"/>
-        <label for="id5">
-            <img src="img/imageArmorLight.jpg" width="100"/>
-        </label>
-        <img src="img/imageArmorLight.jpg"/>
-    </div>
-    <script src="js/carousel.js"></script>
+		<div class="wrapper">
+			<div class="slider">
+				<div class="slider__item filter">
+					<img src="img/slides/big/02.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="img/slides/big/03.jpg" alt="">
+				</div>
+				<div class="slider__item filter">
+					<img src="img/slides/big/04.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="img/slides/big/05.jpg" alt="">
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="js/slick.min.js"></script>
+            <script src="js/carousel.js"></script>
  </body>
 </html>
